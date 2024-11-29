@@ -1,0 +1,276 @@
+/* General Page Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; 
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  color: #00457c; 
+}
+
+a {
+  text-decoration: none;
+  color: #00457c;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9; 
+}
+
+/* Style for the welcome heading */
+.login-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00457c; 
+  text-align: center;
+}
+
+/* Align the login form in the center */
+.login-container form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white; /* IIIT Bangalore blue */
+  color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #00457c;
+}
+
+form button {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #00457c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #003366;
+}
+
+/* Button Styling */
+button {
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #00457c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+.button-group {
+  display: flex; 
+  flex-wrap: nowrap; 
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 10px; 
+  margin-top: 20px; 
+}
+.button-group button {
+  margin: 0;
+  padding: 10px 20px;
+  flex: none;
+  background-color: #00457c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #003366;
+}
+
+.button-group button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button-group button:nth-child(3) {
+  background-color: #dc3545; 
+  color: white;
+}
+
+.button-group button:nth-child(3):hover {
+  background-color: #c82333;
+}
+
+.update-course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-course input, 
+.update-course textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-course button {
+  margin-top: 15px;
+  width: 100%;
+  background-color: #00457c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-course button:hover {
+  background-color: #003366;
+}
+
+
+/* Footer Styling */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer a {
+  color: #00457c;
+}
+.home button.logout-btn {
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+  background-color: #dc3545; 
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home button.logout-btn:hover {
+  background-color: #c82333;
+}
+.notification {
+  position: fixed; /* Fixed position for consistent placement */
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00457c; /* Notification background color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Hidden by default */
+  animation: fadeInOut 3s ease forwards; /* Fade in and out */
+}
+
+/* Animation for fade in and fade out */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  form {
+    width: 90%;
+  }
+}
